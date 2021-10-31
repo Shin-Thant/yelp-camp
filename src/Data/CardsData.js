@@ -9,37 +9,37 @@ export let camps = [
     {
         name: "Mount Ulap",
         img: mountUlap,
-        text: "One of the most famous hikes in Benguet is Mt Ulap in Itogon.",
+        desc: "One of the most famous hikes in Benguet is Mt Ulap in Itogon.",
         price: "109.99",
     },
     {
         name: "Calaguas Islands",
         img: calagusIsland,
-        text: "A paradise of islands that can rival the white sand beauty of Boracay.",
+        desc: "A paradise of islands that can rival the white sand beauty of Boracay.",
         price: "200",
     },
     {
         name: "Onay Beach",
         img: onayBeach,
-        text: "This is one of the best beach camping sites, beautiful and pristine.",
+        desc: "This is one of the best beach camping sites, beautiful and pristine.",
         price: "179.99",
     },
     {
         name: "Seven Sisters Waterfall",
         img: sevenSisters,
-        text: "The Seven Sisters is the 39th tallest waterfall in Norway.",
+        desc: "The Seven Sisters is the 39th tallest waterfall in Norway.",
         price: "249.99",
     },
     {
         name: "Latik Riverside",
         img: latikRiverside,
-        text: "Philippines is one of the most dazzling countries in all of Asia.",
+        desc: "Philippines is one of the most dazzling countries in all of Asia.",
         price: "220",
     },
     {
         name: "Buloy Springs",
         img: buloySprings,
-        text: "This is one of the best beach camping sites, beautiful and pristine.",
+        desc: "This is one of the best beach camping sites, beautiful and pristine.",
         price: "199.99",
     },
 ];

@@ -63,20 +63,7 @@ export const DetailsPage = ({ match }) => {
                                 /night
                             </p>
                         </div>
-                        <p>
-                            {data.desc ? (
-                                data.desc
-                            ) : (
-                                <>
-                                    {data.name} is a 7.7 kilometer moderately
-                                    trafficked point-to-point trail located near
-                                    Tuba, Benguet, Philippines that offers the
-                                    chance to see wildlife and is rated as
-                                    moderate. The trail is primarily used for
-                                    hiking.
-                                </>
-                            )}
-                        </p>
+                        <p>{data.desc}</p>
                         <div className="submit-person">
                             <em>Submitted by Andrew Mike</em>
                         </div>
