@@ -1,0 +1,97 @@
+.search-container {
+    width: 80%;
+    margin: var(--place-center);
+}
+
+.search-card {
+    background-color: var(--background);
+    border-radius: 10px;
+    width: 100%;
+    padding: 50px;
+    margin: 40px 0 70px 0;
+}
+.search-card h1 {
+    font-size: var(--main-text-size);
+    font-weight: var(--main-text-bold);
+    color: black;
+    line-height: var(--main-text-lineheight);
+    margin-bottom: 10px;
+}
+.search-card p {
+    color: var(--text-gray);
+    font-weight: 500;
+}
+
+.search-input-box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-block: 15px;
+}
+.search-input {
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 15px;
+    position: relative;
+    margin-right: 20px;
+    background-color: white;
+    position: relative;
+}
+.search-input input {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    width: 100%;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 1030px) {
+    .search-container {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    .search-container {
+        width: 82%;
+    }
+    .search-card {
+        padding: 40px;
+    }
+    .search-input-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .search-input {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .search-input-box button {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .search-container {
+        width: 92%;
+    }
+}

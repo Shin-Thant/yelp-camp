@@ -1,0 +1,158 @@
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links {
+    display: none;
+    border-top: 1px solid gray;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar > div:not(.hamburger) {
+    display: flex;
+    align-items: center;
+}
+.home-link {
+    margin-left: 25px;
+}
+.login-link {
+    margin-right: 25px;
+}
+.logout-link {
+    margin-left: 25px;
+    color: rgba(228, 11, 11);
+}
+.user-name {
+    font-weight: 600;
+}
+
+.hamburger {
+    display: none;
+    width: 45px;
+    height: 45px;
+    background-color: var(--light-gray);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.hamburger-icon {
+    width: 22px;
+    height: 3px;
+    background-color: black;
+    border-radius: 50px;
+    position: relative;
+    transition: all 250ms ease-in;
+    pointer-events: none;
+    transform-origin: center;
+    transform: translate(-40%, -50%);
+}
+.hamburger-icon::before,
+.hamburger-icon::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 3px;
+    background-color: black;
+    border-radius: 50px;
+    transition: all 250ms ease-in;
+}
+.hamburger-icon::before {
+    width: 30px;
+    transform: translateY(-8px);
+}
+.hamburger-icon::after {
+    width: 14px;
+    transform: translateY(8px);
+}
+
+.hamburger.open .hamburger-icon {
+    transform: translateX(-30px);
+    background-color: transparent;
+}
+.open .hamburger-icon::before {
+    width: 25px;
+    transform: translate(21px, -0px) rotate(45deg);
+}
+.open .hamburger-icon::after {
+    width: 25px;
+    transform: translate(21px, 0px) rotate(-45deg);
+}
+
+.nav-links {
+    display: none;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+.nav-links button,
+.nav-links > div {
+    display: none;
+}
+.nav-links button {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.res-login {
+    border: 2px solid black !important;
+    padding: 5px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+.res-login:hover {
+    color: white;
+    background-color: black;
+    border-color: white;
+}
+
+.res-logOut {
+    color: rgba(228, 11, 11, 0.8);
+    padding: 5px 10px;
+    transition: all 100ms ease;
+}
+.res-logOut:hover,
+.res-logOut:active {
+    border: 2px solid rgba(228, 11, 11, 0.8) !important;
+}
+
+.nav-links.menuOpen {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-links.menuOpen button,
+.nav-links.menuOpen > div {
+    display: inline-block;
+}
+
+@media screen and (min-width: 950px) {
+    .nav-links.menuOpen {
+        display: none;
+    }
+    .nav-links.menuOpen button,
+    .nav-links.menuOpen > div {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .home-link,
+    .login-link,
+    .create-acc,
+    .logout-link,
+    .user-name {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}

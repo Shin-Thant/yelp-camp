@@ -1,0 +1,86 @@
+.addCamp-container {
+    width: 80%;
+    margin: var(--place-center);
+}
+
+.addCamp-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.addCamp-form {
+    width: 45%;
+}
+.addCamp-form h1 {
+    font-size: var(--main-text-size);
+    font-weight: var(--main-text-bold);
+    line-height: var(--main-text-lineheight);
+    color: black;
+    margin-bottom: 20px;
+}
+.addCamp-form p {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.addCamp-form .inputs,
+.show-files {
+    width: 100%;
+    display: block;
+    background-color: var(--light-gray);
+    border: 0;
+    outline: 0;
+    padding: 13px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-bottom: 22px;
+}
+
+.input-file {
+    /* display: none; */
+}
+
+.addCamp-form textarea {
+    height: 220px;
+}
+
+@media screen and (max-width: 1150px) {
+    .addCamp-form {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .addCamp-form {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .addCamp-form {
+        width: 70%;
+    }
+    .addCamp-form textarea {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .addCamp-form {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .addCamp-form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .addCamp-container {
+        width: 90%;
+    }
+}

@@ -1,0 +1,137 @@
+.details-container {
+    width: 80%;
+    margin: 25px auto;
+
+    --border: 1px solid #ddd;
+    --text-size: 15px;
+    --text-weight: 500;
+    --margin: 18px;
+}
+.details-main {
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.details-map-container {
+    width: 35%;
+    height: 100%;
+    border: var(--border);
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.details-content-container {
+    width: 61%;
+}
+.about-place {
+    border: var(--border);
+    padding: 45px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.about-place img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5px;
+}
+.name-price {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--margin) 0;
+}
+.name-price h3,
+.name-price p {
+    color: black;
+}
+.name-price p {
+    font-weight: var(--text-weight);
+}
+.about-place > p {
+    font-weight: var(--text-weight);
+    font-size: var(--text-size);
+    margin-bottom: var(--margin);
+}
+.submit-person {
+    font-weight: var(--text-weight);
+    font-size: 16px;
+}
+
+.comments-container {
+    border: var(--border);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.comments-container > button {
+    display: inline-block;
+    text-align: right;
+}
+
+@media screen and (max-width: 1333px) {
+    .details-container {
+        width: 90%;
+    }
+    .details-map-container {
+        width: 37%;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .details-container {
+        width: 70%;
+    }
+    .details-main {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .details-content-container {
+        width: 100%;
+    }
+    .details-map-container {
+        width: 100%;
+        padding: 80px;
+        display: block;
+    }
+    .details-map-container > img {
+        width: 100%;
+    }
+    .about-place {
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .details-container {
+        width: 80%;
+    }
+    .details-map-container {
+        padding: 50px;
+    }
+    .about-place,
+    .comments-container {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .details-container {
+        width: 90%;
+    }
+    .details-map-container {
+        padding: 30px;
+    }
+    .about-place,
+    .comments-container {
+        padding: 20px;
+    }
+}
